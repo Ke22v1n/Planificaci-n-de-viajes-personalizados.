@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.hero {
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide-active {
+    opacity: 1;
+}
+
+.hero-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero h2 {
+    font-size: 30px;
+}
+
+.hero p {
+    font-size: 25px;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 100;
+    color: white;
+    text-align: center;
+    padding-top: 25vh;
+}
+
+.servicios {
+    padding: 50px 20px;
+    background-color: white;
+}
+
+.servicios-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.servicio-card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.servicio-card:hover {
+    transform: translateY(-10px);
+}
+
+.galeria {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.grid-galeria {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    grid-auto-rows: 200px;
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.grid-item:hover img {
+    transform: scale(1.1);
+}
+
+.contacto {
+    padding: 50px 20px;
+    background-color: white;
+}
+
+.formulario {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.formulario h2 {
+    text-align: center;
+}
+
+.formulario p {
+    font-size: 20px;
+    text-align: center;
+    height: 45px;
+}
+
+u img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
